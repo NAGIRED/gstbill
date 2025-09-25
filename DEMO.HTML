@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guest Details Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+
+        #main2 {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #table2 {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #table2 th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        #table2 td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        input[type="datetime-local"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            background-color: #fff;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            float: right;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        @media screen and (max-width: 600px) {
+            #main2 {
+                padding: 15px;
+            }
+
+            #table2 td, #table2 th {
+                display: block;
+                width: 100%;
+            }
+
+            input[type="button"] {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="main2">
+    <table id="table2">
+        <tr>
+            <th colspan="2">Guest Details</th>
+        </tr>
+        <tr>
+            <td><b>Folio No:</b></td>
+            <td><input type="text" id="foliono2" placeholder="12456"></td>
+        </tr>
+
+        <tr>
+            <td><b>Check-in Date:</b></td>
+            <td>
+                <input type="datetime-local" id="checkin1">
+                <select id="checkinpmam1">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Check-out Date:</b></td>
+            <td>
+                <input type="datetime-local" id="checkout1">
+                <select id="checkoutpmam1">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>No of Persons:</b></td>
+            <td><input type="text" id="noofperson2" placeholder="2"></td>
+        </tr>
+
+        <tr>
+            <td><b>Room No:</b></td>
+            <td>
+                <select id="room2">
+                     <option value="Standard / 104">Standard / 104</option>
+                <option value="Standard / 105">Standard / 105</option>
+                <option value="Standard / 204">Standard / 204</option>
+                <option value="Standard / 205">Standard / 205</option>
+                <option value="Standard / 304">Standard / 304</option>
+                <option value="Standard / 305">Standard / 305</option>
+                <option value="permium /101">permium / 101</option>
+                <option value="permium /102">permium / 102</option>
+                <option value="permium /103">permium / 103</option>
+                <option value="permium /106">permium / 106</option>
+                <option value="permium /201">permium / 201</option>
+                <option value="permium /202 ">permium / 202</option>
+                <option value="permium /203">permium / 203</option>
+                <option value="permium /206">permium / 206</option>
+                <option value="permium /301">permium / 301</option>
+                <option value="permium /302">permium / 302</option>
+                <option value="permium /303">permium / 303</option>
+                <option value="permium /306">permium / 306</option>
+                <option value="classic /107">classic / 107</option>
+                <option value="classic /207">classic / 207</option>
+                <option value="classic /307">classic / 307</option>
+                <option value="suite /108" selected>suite / 108</option>
+                <option value="suite /208" selected>suite / 208</option>
+                <option value="suite /308" selected>suite / 308</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Guest Name:</b></td>
+            <td>
+                <select id="guestprefix2">
+                    <option value="Mr.">Mr.</option>
+                    <option value="Mrs.">Mrs.</option>
+                    <option value="Ms.">Ms.</option>
+                    <option value="Dr.">Dr.</option>
+                    <option value="Sri">Sri</option>
+                    <option value="Smt.">Smt.</option>
+                </select>
+                <input type="text" id="guestname2" placeholder="Full name">
+            </td>
+        </tr>
+
+        <tr>
+            <td><b>Company Name:</b></td>
+            <td><input type="text" id="company2" placeholder="ABC Ltd."></td>
+        </tr>
+
+        <tr>
+            <td><b>Address:</b></td>
+            <td><input type="text" id="address2" placeholder="123 Street, City"></td>
+        </tr>
+
+        <tr>
+            <td><b>State:</b></td>
+            <td><input type="text" id="State2" placeholder="AP"></td>
+        </tr>
+
+        <tr>
+            <td><b>GSTIN No:</b></td>
+            <td><input type="text" id="gstno1" placeholder="37AHSHS82EBZ"></td>
+        </tr>
+
+        <tr>
+            <td><b>Tariff:</b></td>
+            <td><input type="text" id="Taffic1" placeholder="2500.00"></td>
+        </tr>
+
+        <tr>
+            <td><b>No of Qty:</b></td>
+            <td><input type="text" id="qty" placeholder="1"></td>
+        </tr>
+
+        <tr>
+            <td><b>Payment Date:</b></td>
+            <td><input type="date" id="paymentdate1"></td>
+        </tr>
+
+        <tr>
+            <td><b>Payment Mode:</b></td>
+            <td>
+                <select id="paymentmode1">
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                    <option value="upi">UPI</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <input type="button" value="OK" onclick="add()">
+</div>
+
+<script>
+    function add() {
+        alert("Guest data saved!");
+        // You can handle the form submission or processing here
+    }
+</script>
+
+</body>
+</html>
